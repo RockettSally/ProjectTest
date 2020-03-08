@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button (click)="adicionarItem()" ion-button icon-only>
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item no-lines>
+    <small>Listando {{itens.length}} itens.</small>
+  </ion-item>
+  <ion-item *ngFor="let item of itens">
+
+  </ion-item>
+</ion-content>
